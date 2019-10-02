@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { version } from 'feather-icons/package.json';
 import { Link as GatsbyLink } from 'gatsby';
 import MediaQuery from 'react-responsive';
 import theme from '../theme';

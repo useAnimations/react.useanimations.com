@@ -1,11 +1,10 @@
 {
-  "name": "feather",
+  "name": "react-useanimations",
   "description": "React micro-animations library",
   "version": "0.0.0",
   "author": "Tuan Phung <tuan@phung.cz>",
   "license": "MIT",
   "scripts": {
-    "prebuild": "./bin/build-zip.sh",
     "build": "gatsby build",
     "start": "gatsby develop",
     "lint": "eslint .",
@@ -15,16 +14,10 @@
     "*.js": "eslint"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.10",
     "babel-plugin-styled-components": "^1.10.6",
-    "classnames": "2.2.6",
     "copy-to-clipboard": "^3.0.8",
-    "downloadjs": "1.4.7",
     "eslint-config-airbnb": "^18.0.1",
-    "feather-icons": "^4.24.0",
-    "fuse.js": "3.4.5",
     "gatsby": "^2.10.4",
-    "gatsby-plugin-emotion": "^4.1.0",
     "gatsby-plugin-google-analytics": "^2.1.12",
     "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-plugin-react-helmet": "^3.1.0",
@@ -33,15 +26,13 @@
     "lodash": "^4.17.15",
     "polished": "^3.4.1",
     "react": "^16.8.6",
-    "react-clipboard.js": "^2.0.16",
     "react-dom": "^16.8.6",
     "react-helmet": "5.2.1",
     "react-highlight.js": "^1.0.7",
     "react-notification": "^6.8.4",
     "react-responsive": "^8.0.1",
     "react-useanimations": "1.2.2",
-    "styled-components": "^4.4.0",
-    "use-query-params": "^0.4.1"
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

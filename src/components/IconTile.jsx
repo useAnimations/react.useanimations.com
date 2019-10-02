@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { rgba } from 'polished';
+import copy from 'copy-to-clipboard';
 import styled from 'styled-components';
 import UseAnimations from 'react-useanimations';
 import { HexColorNotification } from './common';
@@ -7,12 +8,15 @@ import theme from '../theme';
 
 const IconTile = ({ animationKey, ...other }) => {
   const [isActive, setIsActive] = useState(false);
+
   const handleNotification = () => {
     if (isActive === false) {
       setIsActive(true);
+      copy(animationKey);
+
       setTimeout(() => {
         setIsActive(false);
-      }, 2000);
+      }, 3000);
     }
   };
 

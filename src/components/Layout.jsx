@@ -26,7 +26,6 @@ function Layout({ children }) {
         <meta name="description" content={description} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="https://useanimations.com/feather-og.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@phung_cz" />
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />

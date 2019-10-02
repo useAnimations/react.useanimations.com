@@ -14,6 +14,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${theme.colors.gray[0]};
   }
 
+  div.notification-bar.notification-bar-active {
+    background: #228be6!important;
+  }
+
   code.javascript.hljs {
     border-radius: 8px;
     padding: 8px 16px;

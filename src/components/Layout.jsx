@@ -31,6 +31,7 @@ function Layout({ children }) {
         <meta name="twitter:creator" content="@phung_cz" />
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/railscasts.css" />
       </Helmet>
       <GlobalStyles />
       <Header />

@@ -4,7 +4,6 @@ import { version } from 'feather-icons/package.json';
 import { Link as GatsbyLink } from 'gatsby';
 import MediaQuery from 'react-responsive';
 import theme from '../theme';
-import logOutboundLink from '../utils/logOutboundLink';
 import { Link, OutboundLink } from './common';
 
 const Header = () => (
@@ -19,13 +18,6 @@ const Header = () => (
       >
         UseAnimations
       </Link>
-
-      <VersionNumber
-        href="https://github.com/useanimations/feather/releases"
-        onClick={() => logOutboundLink('release notes')}
-      >
-        v{version}
-      </VersionNumber>
     </div>
 
     <IconsWrapper>
@@ -36,25 +28,12 @@ const Header = () => (
           )}`}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => logOutboundLink('tweet')}
         >
           Tweet
         </Link>
-
-        <Link
-          href="https://github.com/useanimations/feather#feather"
-          onClick={() => logOutboundLink('usage')}
-        >
-          Usage
-        </Link>
       </MediaQuery>
 
-      <Link
-        href="https://github.com/useanimations/feather"
-        onClick={() => logOutboundLink('github')}
-      >
-        GitHub
-      </Link>
+      <Link href="https://github.com/useAnimations/react-useanimations">GitHub</Link>
     </IconsWrapper>
   </HeaderWrapper>
 );

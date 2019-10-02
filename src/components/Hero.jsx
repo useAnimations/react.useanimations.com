@@ -1,10 +1,19 @@
 import React from 'react';
+import Highlight from 'react-highlight.js';
 import styled from 'styled-components';
 import theme from '../theme';
-import logDownload from '../utils/logDownload';
-import logOutboundLink from '../utils/logOutboundLink';
 import mediaQuery from '../utils/mediaQuery';
 import { Button } from './common';
+
+const highlitedContent = `
+import React from "react";
+import UseAnimations from "react-useanimations";
+
+const App = () => (
+  <UseAnimations animationKey="github" size={56} style={{ padding: 100 }} />
+);
+
+`;
 
 const Hero = () => (
   <div
@@ -41,8 +50,7 @@ const Hero = () => (
       }}
     >
       <Button
-        href="https://github.com/useanimations/feather#feather"
-        onClick={() => logOutboundLink('get started')}
+        href="https://github.com/useAnimations/react-useanimations"
         css={{
           color: theme.colors.white,
           backgroundColor: theme.colors.primary[0],
@@ -54,9 +62,7 @@ const Hero = () => (
         Get Started
       </Button>
       <Button
-        href="/feather.zip"
-        onClick={() => logDownload('all')}
-        download
+        href="https://codesandbox.io/s/wonderful-architecture-9prk6"
         css={{
           color: theme.colors.gray[8],
           backgroundColor: 'transparent',
@@ -66,9 +72,10 @@ const Hero = () => (
           },
         }}
       >
-        Download All
+        See example
       </Button>
     </div>
+    <Highlight language="javascript">{highlitedContent}</Highlight>
   </div>
 );
 

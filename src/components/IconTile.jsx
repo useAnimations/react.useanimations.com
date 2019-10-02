@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { rgba } from 'polished';
 import styled from 'styled-components';
 import UseAnimations from 'react-useanimations';
+import { HexColorNotification } from './common';
 import theme from '../theme';
 
-const IconTile = ({ animationKey, ...other }) => (
-  <IconWrapper role="button" tabIndex={0} {...other}>
-    <AnimationWrapper className="icon-container">
-      <Animation animationKey={animationKey} />
-    </AnimationWrapper>
-    <AnimationText>{animationKey}</AnimationText>
-  </IconWrapper>
-);
+const IconTile = ({ animationKey, ...other }) => {
+  const [isActive, setIsActive] = useState(false);
+  const handleNotification = () => {
+    if (isActive === false) {
+      setIsActive(true);
+      setTimeout(() => {
+        setIsActive(false);
+      }, 2000);
+    }
+  };
+
+  return (
+    <IconWrapper role="button" tabIndex={0} {...other} onClick={handleNotification}>
+      <AnimationWrapper className="icon-container">
+        <Animation animationKey={animationKey} />
+      </AnimationWrapper>
+      <AnimationText>{animationKey}</AnimationText>
+      <HexColorNotification isActive={isActive} coppiedValue={animationKey} />
+    </IconWrapper>
+  );
+};
 
 export default IconTile;
 

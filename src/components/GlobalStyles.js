@@ -13,6 +13,16 @@ const GlobalStyles = createGlobalStyle`
     color: ${theme.colors.gray[8]};
     background-color: ${theme.colors.gray[0]};
   }
+
+  code.javascript.hljs {
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 32px;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 `;
 
 export default GlobalStyles;

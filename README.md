@@ -11,13 +11,13 @@ This repo contains the source code for [react.useanimations.com](https://react.u
 git clone https://github.com/useAnimations/react.useanimations.com
 
 # Enter the repo
-cd useanimations.com
+cd react.useanimations.com
 
 # Install the dependencies
-npm install
+yarn
 
 # Start local development
-npm run start
+yarn start
 ```
 
 > **Note:** This requires Node.js and npm to be set up locally, see [nodejs.org](https://nodejs.org) for more information.

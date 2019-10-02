@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
-import logOutboundLink from '../utils/logOutboundLink';
 import { Link, OutboundLink } from './common';
 
 const Footer = () => (
@@ -9,9 +8,15 @@ const Footer = () => (
     <Link
       as={OutboundLink}
       href="https://twitter.com/phung_cz"
-      onClick={() => logOutboundLink('made by @phung_cz')}
     >
       Made by @phung_cz
+    </Link>
+
+    <Link
+      as={OutboundLink}
+      href="https://twitter.com/TheSvob"
+    >
+      Designed by @TheSvob
     </Link>
   </FooterWrapper>
 );
@@ -24,4 +29,8 @@ const FooterWrapper = styled.div`
   align-items: center;
   padding: ${theme.space[5]};
   font-size: ${theme.fontSizes[1]};
+
+  * > div {
+    display: inline;
+  }
 `;

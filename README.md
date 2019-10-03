@@ -4,6 +4,8 @@
 
 This repo contains the source code for [react.useanimations.com](https://react.useanimations.com).
 
+![](useanimations-preview.gif)
+
 ## Project Setup
 
 ```shell

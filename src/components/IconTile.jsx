@@ -26,7 +26,7 @@ const IconTile = ({ animationKey, ...other }) => {
         <Animation animationKey={animationKey} />
       </AnimationWrapper>
       <AnimationText>{animationKey}</AnimationText>
-      <HexColorNotification isActive={isActive} coppiedValue={animationKey} />
+      <HexColorNotification isActive={isActive} copiedValue={animationKey} />
     </IconWrapper>
   );
 };

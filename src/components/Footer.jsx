@@ -9,14 +9,14 @@ const Footer = () => (
       as={OutboundLink}
       href="https://twitter.com/phung_cz"
     >
-      React library made by @phung_cz
+      React library made by Tuan Anh Phung @phung_cz
     </Link>
 
     <Link
       as={OutboundLink}
       href="https://twitter.com/TheSvob"
     >
-      Animations designed by @TheSvob
+      Animations designed by Patrik Svoboda @TheSvob
     </Link>
   </FooterWrapper>
 );

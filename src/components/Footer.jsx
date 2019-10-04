@@ -16,7 +16,7 @@ const Footer = () => (
       as={OutboundLink}
       href="https://twitter.com/TheSvob"
     >
-      All animations designed by @TheSvob
+      Animations designed by @TheSvob
     </Link>
   </FooterWrapper>
 );

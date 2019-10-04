@@ -1745,7 +1745,7 @@ babel-preset-gatsby@^0.2.17:
     babel-plugin-macros "^2.6.1"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
 
-babel-runtime@^6.26.0, babel-runtime@^6.6.1:
+babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -3800,10 +3800,25 @@ eslint-plugin-react-hooks@^2.1.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.1.1.tgz#b416390b642113f444ee175b667c3222a045a98e"
   integrity sha512-AYitPYzwHyKpZKpzMH5sCkld68vP8wn29Lq716h4jk1ll9Gp4BBFoPq/iCjBBT35eXFJvOPjgMlvhIXFB0OhXg==
 
-eslint-plugin-react@^7.14.2, eslint-plugin-react@^7.14.3:
+eslint-plugin-react@^7.14.3:
   version "7.15.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.15.0.tgz#4808b19cf7b4c439454099d4eb8f0cf0e9fe31dd"
   integrity sha512-NbIh/yVXoltm8Df28PiPRanfCZAYubGqXU391MTCpW955Vum7S0nZdQYXGAvDh9ye4aNCmOR6YcYZsfMbEQZQA==
+  dependencies:
+    array-includes "^3.0.3"
+    doctrine "^2.1.0"
+    has "^1.0.3"
+    jsx-ast-utils "^2.2.1"
+    object.entries "^1.1.0"
+    object.fromentries "^2.0.0"
+    object.values "^1.1.0"
+    prop-types "^15.7.2"
+    resolve "^1.12.0"
+
+eslint-plugin-react@^7.15.1:
+  version "7.15.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.15.1.tgz#db5f8ed66c6ba46922518f08e1df9dac52ccaa49"
+  integrity sha512-YotSItgMPwLGlr3df44MGVyXnHkmKcpkHTzpte3QwJtocr3nFqCXCuoxFZeBtnT8RHdj038NlTvam3dcAFrMcA==
   dependencies:
     array-includes "^3.0.3"
     doctrine "^2.1.0"
@@ -5448,10 +5463,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@3.0.7:
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.7.tgz#05e869006c7d9a31b27893aeda520e730bd125b9"
-  integrity sha512-fIrkaREoQk6DO8KnSX16Aq7Kg9SxqYYQZH/9b+4AxXyXNNgpJLsc8lWlQCShLus1nbujIyZ/WQZBHGwClohK/w==
+husky@3.0.8:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.8.tgz#8de3fed26ce9b43034ef51013c4ad368b6b74ea8"
+  integrity sha512-HFOsgcyrX3qe/rBuqyTt+P4Gxn5P0seJmr215LAZ/vnwK3jWB3r0ck7swbzGRUbufCf9w/lgHPVbF/YXQALgfQ==
   dependencies:
     chalk "^2.4.2"
     cosmiconfig "^5.2.1"
@@ -8756,7 +8771,7 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.8.6, react-dom@^16.9.0:
+react-dom@^16.8.6:
   version "16.10.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.10.1.tgz#479a6511ba34a429273c213cbc2a9ac4d296dac1"
   integrity sha512-SmM4ZW0uug0rn95U8uqr52I7UdNf6wdGLeXDmNLfg3y5q5H9eAbdjF5ubQc3bjDyRrvdAB2IKG7X0GzSpnn5Mg==
@@ -8852,10 +8867,10 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react-useanimations@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/react-useanimations/-/react-useanimations-1.2.2.tgz#664ab84fdf5462a08f1069c68ee30eb26ac63a4f"
-  integrity sha512-MXm/JHCb4m4ITkVPsBBMnpr7nfpCI+Y3Ut3WB7YWINV7GvVK5BUNUaT+CMajMs4UyXnr9rdWfETfE0FiIg5jFw==
+react-useanimations@1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/react-useanimations/-/react-useanimations-1.2.8.tgz#30f301ec74a1ca03bd3734df0b9559e2ad96873b"
+  integrity sha512-VjBG9E28ts5eIXZZ9q2iVMq6pahTbdjtEAqXxfE4yQsB6fKch35d9+m8y1d9Dmayq48sH3b/KiBvh6GMmxp4EA==
   dependencies:
     "@babel/cli" "^7.6.2"
     "@babel/core" "^7.6.2"
@@ -8864,7 +8879,6 @@ react-useanimations@1.2.2:
     "@babel/preset-react" "^7.0.0"
     "@babel/runtime" "^7.6.2"
     babel-eslint "^10.0.3"
-    babel-runtime "^6.6.1"
     eslint "^6.5.0"
     eslint-config-airbnb "^18.0.1"
     eslint-plugin-babel "^5.3.0"
@@ -8874,7 +8888,7 @@ react-useanimations@1.2.2:
     lottie-web "^5.5.7"
     nodemon "^1.19.1"
     react "^16.9.0"
-    react-dom "^16.9.0"
+    react-highlight.js "^1.0.7"
 
 react@^16.8.6, react@^16.9.0:
   version "16.10.1"

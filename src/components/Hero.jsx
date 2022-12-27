@@ -8,10 +8,10 @@ import { Button } from './common';
 const highlitedContent = `
 import React from "react";
 import UseAnimations from "react-useanimations";
-import github from 'react-useanimations/lib/github'
+import github from 'react-useanimations/lib/github';
 
 const App = () => (
-  <UseAnimations animation={github} size={56} style={{ padding: 100 }} />
+  <UseAnimations animation={github} size={56} />
 );
 
 `;
